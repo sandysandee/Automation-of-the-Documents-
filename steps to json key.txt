@@ -1,0 +1,20 @@
+Go to the Google Cloud Console.
+Create a new project or select an existing one.
+Enable the Google Sheets API for your project.
+Navigate to the "IAM & Admin" > "Service accounts" section.
+Create a new service account.
+Assign the required roles (e.g., Editor) to the service account.
+Create and download a JSON key for the service account.
+Make sure you've selected the correct project (avian-altar-408713 in this case).
+Enable the Google Drive API by going to the API Library and searching for "Drive API." Enable it for your project.
+If you've recently enabled the API, wait a few minutes for the changes to propagate through Google's systems.
+Double-check that the project ID specified in your credentials JSON file (avian-altar-408713) matches the project ID associated with your project in the Google Cloud Console.
+enable drive api , google sheets api 
+In the left sidebar, click on "IAM & Admin" and then click on "IAM."
+Ensure that the service account you're using (the one specified in your service account JSON key) has the necessary permissions. At least, it should have the "Editor" role, which grants it the ability to read and write to Google Sheets.
+Open Google Drive: https://drive.google.com/
+Locate the Google Sheet you are trying to access.
+Right-click on the Google Sheet.
+Choose "Share."
+Enter the email address of the service account (sheets@avian-altar-408713.iam.gserviceaccount.com).
+Set the access level to "Editor."
